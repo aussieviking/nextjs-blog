@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import utilStyles from "../../styles/utils.module.css";
+import Date from "../../components/date";
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
